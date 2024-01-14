@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title={title} icon-name={iconName}>
+        <div class="slds-m-top_small">
+            <lightning-flow lwc:if={recordId} flow-api-name={flowName} flow-input-variables={inputVariables}
+                onstatuschange={handleFlowFinish}></lightning-flow>
+        </div>
+    </lightning-card>
+</template>

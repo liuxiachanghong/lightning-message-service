@@ -1,0 +1,14 @@
+<template>
+    <div class="list-header slds-p-around_small">
+        <lightning-icon icon-name="standard:contact" size="small" alternative-text="contact"></lightning-icon>
+        <lightning-formatted-text class="slds-m-left_small slds-card__header-title"
+            value="Contact"></lightning-formatted-text>
+        <lightning-formatted-text class="slds-m-left_xx-small slds-card__header-title"
+            value={contactCnt}></lightning-formatted-text>
+    </div>
+    <lightning-datatable class="custom-datatable" key-field="Id" data={rows} columns={columns}
+        onrowaction={handleRowAction} hide-checkbox-column="false"></lightning-datatable>
+    <div class="list-footer slds-p-around_x-small slds-align_absolute-center">
+        <lightning-formatted-text class="slds-m-left_small" value="-"></lightning-formatted-text>
+    </div>
+</template>

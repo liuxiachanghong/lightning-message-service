@@ -1,0 +1,14 @@
+.list-header {
+    display:flex;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #ababab;
+}
+
+.list-footer {
+    display:flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+}

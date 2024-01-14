@@ -1,0 +1,11 @@
+public with sharing class ContactController {
+    @AuraEnabled
+    public static List<Contact> getContacts(Id recordId) {
+        return [
+            SELECT Id, FirstName, LastName, Email, Phone
+            FROM Contact 
+            WHERE AccountId = :recordId
+            ORDER BY CreatedDate DESC
+        ];
+    }
+}
